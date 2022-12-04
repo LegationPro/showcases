@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.app {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("./assets//background-main.jpg");
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+header nav {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-left: 1em;
+}
+
+header nav ul {
+    display: flex;
+    padding: 1em;
+    gap: 2em;
+    flex-direction: row;
+    list-style: none;
+}
+
+header nav ul li {
+    font-variant-caps: all-petite-caps;
+    font-size: 2em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    padding: 1em;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.main main h2 {
+    color:white;
+}
+
+.main main article header {
+    font-size: 2em;
+    font-weight: bolder;
+    color:white;
+}
+
+.main main h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin: auto;
+}
+
+.main main article header {
+    display: flex;
+    justify-content: center;
+    font-size: 10em;
+    padding-top: 0.5em;
+}
+
+.main main ul {
+    padding: 2em;
+    display: flex;
+    gap: 2em;
+}
+
+.main nav {
+    display: flex;
+    justify-content: center;
+}
+
+
+.main main ul li {
+    color: white;
+    margin-bottom: auto;
+}
+
+.main main a {
+    text-decoration: none;
+    font-size: 1.25em;
+    color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 800px) {
+    .app header {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 4em;
+    }
+
+    .app header h1 {
+        margin: auto;
+    }
+
+    .app header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app header nav {
+        margin: auto;
+    }
+
+    .main nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50vw;
+    }
+
+    .main main article header {
+        font-size: 6em;
+    }
+}
